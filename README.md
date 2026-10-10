@@ -44,3 +44,5 @@ A edi??o independente est? em `/analise-candidaturas/`: visualiza??o editorial e
 Somente dados derivados p?blicos s?o publicados. Os bancos SQLite, identificadores pessoais privados e revis?es privadas n?o integram este reposit?rio. O projeto original de candidaturas permanece separado.
 
 Para gerar outra captura, execute `python tools/export_analysis.py --database CAMINHO_DO_BANCO_PRIVADO --output PASTA_NOVA`. O exportador abre o banco somente para leitura e recusa sobrescrever arquivos. Revise os resultados antes de substituir a pasta p?blica `analise-candidaturas/data`. Sirva o site por HTTP para usar os filtros.
+
+A edi??o tamb?m foi publicada na Hostinger em https://fukuroconsultoria.com.br/analise-candidaturas/, pois o DNS do dom?nio aponta para essa hospedagem. O diret?rio ? independente do aplicativo existente na raiz.
