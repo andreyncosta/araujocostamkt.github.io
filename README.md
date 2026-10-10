@@ -36,3 +36,11 @@ python3 -m http.server 8000
 ## Observação sobre o formulário de contato
 
 O formulário na seção `#contato` (`index.html`) usa `action="#"`, ou seja, ainda não envia os dados para nenhum backend ou serviço de e-mail. Para capturar leads é necessário integrá-lo a um serviço como Formspree, um endpoint próprio, ou `mailto:`.
+
+## An?lise eleitoral p?blica
+
+A edi??o independente est? em `/analise-candidaturas/`: visualiza??o editorial escura com evolu??o por espectro, cruzamentos municipais e pain?is individuais. Inclui 48.544 candidaturas com vota??o pr?pria, 45.107 com informa??o territorial e dez indicadores IBGE para 5.570 munic?pios. A captura e as limita??es est?o documentadas na p?gina. N?o ? apura??o em tempo real.
+
+Somente dados derivados p?blicos s?o publicados. Os bancos SQLite, identificadores pessoais privados e revis?es privadas n?o integram este reposit?rio. O projeto original de candidaturas permanece separado.
+
+Para gerar outra captura, execute `python tools/export_analysis.py --database CAMINHO_DO_BANCO_PRIVADO --output PASTA_NOVA`. O exportador abre o banco somente para leitura e recusa sobrescrever arquivos. Revise os resultados antes de substituir a pasta p?blica `analise-candidaturas/data`. Sirva o site por HTTP para usar os filtros.
